@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle - Mindy Travel</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="../../index.html">Home</a>
+            <a href="./aboutUs.html">About us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./information.html">More Information</a>
+            <a href="./benefitsTips.html">Benefits and Tips</a>
+            <a href="#">Raffle</a>
+        </div>
+        <div class="Logo">
+            <img src="../Images/logo.png" alt="">
+        </div>
+    </nav>
+    <header>
+        <h1>Raffle</h1>
+        <p>you can collaborate and participate in a raffle for a 1 week trip</p>
+    </header>
+    <main id="MainRaffle">
+        <section Class="SectRaf">
+            <h3>To partipate you must be from Toronto, Canada</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sar!4v1687501513865!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <form action="./show_data.html" method="get" class="Form">
+            <fieldset class="DatosPer">
+
+                <label for="First-Name">First Name:</label>
+                <input type="text" id="First-Name" name="name-raffle">
+
+                <label for="Last-Name">Last Name:</label>
+                <input type="text" id="Last-Name" name="last-name-raf">
+
+                <label for="email-raf">Email:</label>
+                <input type="email" name="mail-participant" id="email-raf">
+
+
+                <label for="Country">Choose Country:</label>
+                <select name="Country" id="Country">
+                    <option value=" ">--select a option--</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="España">España</option>
+                    <option value="Italia">Italia</option>
+                </select>
+
+                <label for="Date">Choose Date:</label>
+                <select name="Date" id="Date">
+                    <option value=" ">--select a option--</option>
+                    <option value="20/02">20/02</option>
+                    <option value="02/10">02/10</option>
+                    <option value="07/10">07/10</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Payment option</legend>
+
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Cash</label>
+
+                <input type="radio" id="credit-card" name="payment" value="credit-card">
+                <label for="credit-card">Credit card</label>
+
+                <input type="radio" id="debit.card" name="payment" value="debit-card">
+                <label for="debit.card">Debit card</label>
+            </fieldset>
+
+            <label for="message">Message (Optional):</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <div class="terms">
+                <input type="radio" id="terms" name="acept-terms" value="acept-terms">
+                <label for="terms">I acept terms and conditions</label>
+            </div>
+            <input type="submit" value="Enviar">
+
+        </form>
+    </main>
+    <footer>
+        <p>Created by Isaac Alfonso</p>
+    </footer>
+</body>
+
+</html>
